@@ -34,10 +34,44 @@
 			</header>
 
 			<main role="main" class="inner cover">
-				<h1 class="cover-heading">Contact.</h1>
-				<p class="lead">
-					Soon soon...
-				</p>
+				<!-- Contact Form Block -->
+				<div class="lead">
+					<div class="contact-wrap">
+						<h3 class="mb-4 text-center">Get in touch with us</h3>
+						<div id="form-message-warning" class="mb-4 w-100 text-center"></div>
+						<div id="form-message-success" class="mb-4 w-100 text-center"></div>
+					</div>
+					<form action="mailto:contact@peaktrials.com" method="POST" id="contactForm" name="contactForm" class="contactForm" novalidate="novalidate">
+						<div class="row">
+							<div class="col-md-12">
+								<div class="form-group">
+									<input type="text" class="form-control" name="name" id="name" placeholder="Name">
+								</div>
+							</div>
+							<div class="col-md-12">
+								<div class="form-group">
+									<input type="email" class="form-control" name="email" id="email" placeholder="Email">
+								</div>
+							</div>
+							<div class="col-md-12">
+								<div class="form-group">
+									<input type="text" class="form-control" name="subject" id="subject" placeholder="Subject">
+								</div>
+							</div>
+							<div class="col-md-12">
+								<div class="form-group">
+									<textarea name="message" class="form-control" id="message" cols="30" rows="8" placeholder="Message"></textarea>
+								</div>
+							</div>
+							<div class="col-md-12">
+								<div class="form-group">
+									<input type="submit" value="Send Message" class="btn btn-primary">
+									<div class="submitting"></div>
+								</div>
+							</div>
+						</div>
+					</form>
+				</div>
 			</main>
 
 			<footer class="mastfoot mt-auto">
